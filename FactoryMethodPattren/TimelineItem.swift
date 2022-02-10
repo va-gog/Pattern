@@ -35,6 +35,6 @@ class VideoTimelineItem: TimelineItem {
 class AudioTimelineItem: TimelineItem {
     let width: CGFloat = 50
     let factorX: CGFloat = 100
-    let type: String = "video"
+    let type: String = "audio"
     
 }

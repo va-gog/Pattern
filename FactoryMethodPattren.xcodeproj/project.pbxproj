@@ -14,6 +14,8 @@
 		49E6122227B5B2C40028DB76 /* FactoryMethodPattrenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6122127B5B2C40028DB76 /* FactoryMethodPattrenTests.swift */; };
 		49E6122C27B5B2C40028DB76 /* FactoryMethodPattrenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6122B27B5B2C40028DB76 /* FactoryMethodPattrenUITests.swift */; };
 		49E6122E27B5B2C40028DB76 /* FactoryMethodPattrenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6122D27B5B2C40028DB76 /* FactoryMethodPattrenUITestsLaunchTests.swift */; };
+		49E6123B27B5B34F0028DB76 /* TimelineItemCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6123A27B5B34F0028DB76 /* TimelineItemCreator.swift */; };
+		49E6123D27B5B3810028DB76 /* TimelineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6123C27B5B3810028DB76 /* TimelineItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		49E6122727B5B2C40028DB76 /* FactoryMethodPattrenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactoryMethodPattrenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E6122B27B5B2C40028DB76 /* FactoryMethodPattrenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodPattrenUITests.swift; sourceTree = "<group>"; };
 		49E6122D27B5B2C40028DB76 /* FactoryMethodPattrenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodPattrenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49E6123A27B5B34F0028DB76 /* TimelineItemCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineItemCreator.swift; sourceTree = "<group>"; };
+		49E6123C27B5B3810028DB76 /* TimelineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				49E6121027B5B2C20028DB76 /* FactoryMethodPattrenApp.swift */,
 				49E6121227B5B2C20028DB76 /* ContentView.swift */,
+				49E6123A27B5B34F0028DB76 /* TimelineItemCreator.swift */,
+				49E6123C27B5B3810028DB76 /* TimelineItem.swift */,
 				49E6121427B5B2C40028DB76 /* Assets.xcassets */,
 				49E6121627B5B2C40028DB76 /* Preview Content */,
 			);
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				49E6121327B5B2C20028DB76 /* ContentView.swift in Sources */,
+				49E6123B27B5B34F0028DB76 /* TimelineItemCreator.swift in Sources */,
 				49E6121127B5B2C20028DB76 /* FactoryMethodPattrenApp.swift in Sources */,
+				49E6123D27B5B3810028DB76 /* TimelineItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FactoryMethodPattren/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JH2YX2V8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -432,7 +441,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Goga.FactoryMethodPattren;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FactoryMethodPattrenQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -448,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FactoryMethodPattren/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JH2YX2V8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -461,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Goga.FactoryMethodPattren;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.FactoryMethodPattrenQ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -474,8 +484,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JH2YX2V8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,8 +510,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JH2YX2V8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,6 +537,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JH2YX2V8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,6 +560,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3JH2YX2V8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

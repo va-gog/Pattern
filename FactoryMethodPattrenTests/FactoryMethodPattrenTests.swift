@@ -19,6 +19,7 @@ class FactoryMethodPattrenTests: XCTestCase {
     }
 
     func testExample() throws {
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
@@ -28,6 +29,11 @@ class FactoryMethodPattrenTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+    
+    func testFactoryMethodConceptual() {
+        VideoItemCreator().trimAction()
+        AudioItemCreator().moveAction()
     }
 
 }

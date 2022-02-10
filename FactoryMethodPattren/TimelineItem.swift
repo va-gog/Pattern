@@ -16,18 +16,20 @@ protocol TimelineItem {
     func move(_ translation: CGFloat)
 }
 
+extension TimelineItem {
+    func trim(_ translation: CGFloat) {
+        print("Initial width of the \(type) was \(width) but it trimmed \(translation) points. Final width is \(width - translation)")
+    }
+    
+    func move(_ translation: CGFloat) {
+        print("Initial X position of the \(type) was \(width) but it moved \(translation) points. Final X position is \(factorX - translation)")
+    }
+}
+
 class VideoTimelineItem: TimelineItem {
     let width: CGFloat = 100
     let factorX: CGFloat = 0
     let type: String = "video"
-    
-    func trim(_ translation: CGFloat) {
-        print("Initial width of the \(type) was \(width) but it trimmed \(translation) points. Final width is \(width - translation)")
-    }
-              
-    func move(_ translation: CGFloat) {
-        print("Initial X position of the \(type) was \(width) but it moved \(translation) points. Final X position is \(factorX - translation)")
-    }
 }
 
 class AudioTimelineItem: TimelineItem {
@@ -35,11 +37,4 @@ class AudioTimelineItem: TimelineItem {
     let factorX: CGFloat = 100
     let type: String = "video"
     
-    func trim(_ translation: CGFloat) {
-        print("Initial width of the \(type) was \(width) but it trimmed \(translation) points. Final width is \(width - translation)")
-    }
-              
-    func move(_ translation: CGFloat) {
-        print("Initial X position of the \(type) was \(width) but it moved \(translation) points. Final X position is \(width - translation)")
-    }
 }

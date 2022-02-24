@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4989726727C823D000235AFA /* HamburgerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989726627C823D000235AFA /* HamburgerBuilder.swift */; };
+		4989726927C8244000235AFA /* Burger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989726827C8244000235AFA /* Burger.swift */; };
+		4989726B27C8267E00235AFA /* BurgerShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989726A27C8267E00235AFA /* BurgerShop.swift */; };
+		4989726F27C829BE00235AFA /* BuilderPatternTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4989726E27C829BE00235AFA /* BuilderPatternTest.swift */; };
+		49AE02C127C5748C0019A410 /* PaperProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE02C027C5748C0019A410 /* PaperProduct.swift */; };
+		49AE02C327C575B80019A410 /* WoodProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE02C227C575B80019A410 /* WoodProduct.swift */; };
+		49AE02C527C5777B0019A410 /* ProductFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE02C427C5777B0019A410 /* ProductFactory.swift */; };
+		49AE02C727C57BC80019A410 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE02C627C57BC80019A410 /* Client.swift */; };
+		49AE02C927C57C370019A410 /* AbstractFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AE02C827C57C370019A410 /* AbstractFactoryPattern.swift */; };
 		49E6121127B5B2C20028DB76 /* FactoryMethodPattrenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6121027B5B2C20028DB76 /* FactoryMethodPattrenApp.swift */; };
 		49E6121327B5B2C20028DB76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6121227B5B2C20028DB76 /* ContentView.swift */; };
 		49E6121527B5B2C40028DB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E6121427B5B2C40028DB76 /* Assets.xcassets */; };
@@ -36,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4989726627C823D000235AFA /* HamburgerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HamburgerBuilder.swift; sourceTree = "<group>"; };
+		4989726827C8244000235AFA /* Burger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Burger.swift; sourceTree = "<group>"; };
+		4989726A27C8267E00235AFA /* BurgerShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerShop.swift; sourceTree = "<group>"; };
+		4989726E27C829BE00235AFA /* BuilderPatternTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPatternTest.swift; sourceTree = "<group>"; };
+		49AE02C027C5748C0019A410 /* PaperProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperProduct.swift; sourceTree = "<group>"; };
+		49AE02C227C575B80019A410 /* WoodProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoodProduct.swift; sourceTree = "<group>"; };
+		49AE02C427C5777B0019A410 /* ProductFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFactory.swift; sourceTree = "<group>"; };
+		49AE02C627C57BC80019A410 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		49AE02C827C57C370019A410 /* AbstractFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryPattern.swift; sourceTree = "<group>"; };
 		49E6120D27B5B2C20028DB76 /* FactoryMethodPattren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FactoryMethodPattren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E6121027B5B2C20028DB76 /* FactoryMethodPattrenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodPattrenApp.swift; sourceTree = "<group>"; };
 		49E6121227B5B2C20028DB76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +93,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4989726327C820F200235AFA /* Abstract Factory */ = {
+			isa = PBXGroup;
+			children = (
+				49AE02C627C57BC80019A410 /* Client.swift */,
+				49AE02C027C5748C0019A410 /* PaperProduct.swift */,
+				49AE02C227C575B80019A410 /* WoodProduct.swift */,
+				49AE02C427C5777B0019A410 /* ProductFactory.swift */,
+			);
+			path = "Abstract Factory";
+			sourceTree = "<group>";
+		};
+		4989726427C8210F00235AFA /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				49E6121227B5B2C20028DB76 /* ContentView.swift */,
+				49E6123A27B5B34F0028DB76 /* TimelineItemCreator.swift */,
+				49E6123C27B5B3810028DB76 /* TimelineItem.swift */,
+			);
+			path = FactoryMethod;
+			sourceTree = "<group>";
+		};
+		4989726527C8213500235AFA /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				4989726627C823D000235AFA /* HamburgerBuilder.swift */,
+				4989726A27C8267E00235AFA /* BurgerShop.swift */,
+				4989726827C8244000235AFA /* Burger.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
 		49E6120427B5B2C20028DB76 = {
 			isa = PBXGroup;
 			children = (
@@ -98,10 +147,10 @@
 		49E6120F27B5B2C20028DB76 /* FactoryMethodPattren */ = {
 			isa = PBXGroup;
 			children = (
+				4989726527C8213500235AFA /* Builder */,
 				49E6121027B5B2C20028DB76 /* FactoryMethodPattrenApp.swift */,
-				49E6121227B5B2C20028DB76 /* ContentView.swift */,
-				49E6123A27B5B34F0028DB76 /* TimelineItemCreator.swift */,
-				49E6123C27B5B3810028DB76 /* TimelineItem.swift */,
+				4989726427C8210F00235AFA /* FactoryMethod */,
+				4989726327C820F200235AFA /* Abstract Factory */,
 				49E6121427B5B2C40028DB76 /* Assets.xcassets */,
 				49E6121627B5B2C40028DB76 /* Preview Content */,
 			);
@@ -120,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				49E6122127B5B2C40028DB76 /* FactoryMethodPattrenTests.swift */,
+				49AE02C827C57C370019A410 /* AbstractFactoryPattern.swift */,
+				4989726E27C829BE00235AFA /* BuilderPatternTest.swift */,
 			);
 			path = FactoryMethodPattrenTests;
 			sourceTree = "<group>";
@@ -264,9 +315,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				49E6121327B5B2C20028DB76 /* ContentView.swift in Sources */,
+				4989726B27C8267E00235AFA /* BurgerShop.swift in Sources */,
+				49AE02C527C5777B0019A410 /* ProductFactory.swift in Sources */,
 				49E6123B27B5B34F0028DB76 /* TimelineItemCreator.swift in Sources */,
+				4989726727C823D000235AFA /* HamburgerBuilder.swift in Sources */,
+				49AE02C127C5748C0019A410 /* PaperProduct.swift in Sources */,
 				49E6121127B5B2C20028DB76 /* FactoryMethodPattrenApp.swift in Sources */,
 				49E6123D27B5B3810028DB76 /* TimelineItem.swift in Sources */,
+				49AE02C727C57BC80019A410 /* Client.swift in Sources */,
+				4989726927C8244000235AFA /* Burger.swift in Sources */,
+				49AE02C327C575B80019A410 /* WoodProduct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +333,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				49E6122227B5B2C40028DB76 /* FactoryMethodPattrenTests.swift in Sources */,
+				4989726F27C829BE00235AFA /* BuilderPatternTest.swift in Sources */,
+				49AE02C927C57C370019A410 /* AbstractFactoryPattern.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

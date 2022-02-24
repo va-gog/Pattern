@@ -8,7 +8,7 @@
 import UIKit
 
 protocol TimelineItemCreator: Trimable, Moveable {
-   func createItem() -> TimelineItem?
+    func createItem() -> TimelineItem?
 }
 
 protocol Trimable {
@@ -16,7 +16,7 @@ protocol Trimable {
 }
 
 protocol Moveable {
-func moveAction()
+    func moveAction()
 }
 
 
